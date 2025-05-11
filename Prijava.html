@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Prijava</title>
+  </head>
+  <body>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="card p-4 shadow" style="width: 100%; max-width: 400px">
+        <h3 class="text-center mb-4" style="font-size: 3rem">
+          Prijava Korisnika
+        </h3>
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="username" class="form-label">Korisničko ime</label>
+            <input type="text" class="form-control" id="username" required />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Lozinka</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+          </div>
+          <div id="successMsg" class="text-primary mb-3">Uspjesna prijava</div>
+          <div id="errorMsg" class="text-danger mb-3"></div>
+          <button type="submit" class="btn btn-dark w-100 bg-dark">
+            Prijavi se
+          </button>
+        </form>
+        <div class="text-center mt-3">
+          Nemaš račun ?<a href="register.html" class="btn btn-link"
+            >Registriraj se</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
