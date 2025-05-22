@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*NavBar-> Css*/
+.navbar {
+  padding: 1.5rem;
+  background-color: black !important;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.nav-item > a > svg {
+  height: 1.7rem;
+  width: 1.7rem;
+  color: rgb(199, 182, 27);
+}
+/*Animated text-> Css*/
+.animatedtext {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 30%;
+}
+.animatedtext > p {
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+  display: inline-block;
+  border-right: 5px solid white;
+  animation: typingwitherror 8s steps(21, end) infinite,
+    blink 0.7s step-end infinite;
+}
+@keyframes typingwitherror {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 40%;
+  }
+  50% {
+    width: 70%;
+  }
+  65% {
+    width: 100%;
+  }
+  90% {
+    width: 0%;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+/*Footer-> Css*/
+.footer-zaiskri {
+  padding: 1.5rem;
+  align-items: center;
+  background-image: url("/Materials/img/zaiskri-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: auto;
+  width: 100%;
+  height: 25rem;
+}
+
+.footer-zaiskri > h2,
+.animatedtext > p {
+  text-align: center;
+  padding: 2.2rem;
+  font-size: 5.6rem;
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: 700;
+  font-family: "Roboto Condensed", serif;
+  text-transform: uppercase;
+}
+.footer-zaiskri :last-child {
+  color: rgb(194, 45, 45);
+}
+@media (max-width: 1440px) {
+  .animatedtext {
+    left: 12%;
+  }
+}
+@media (max-width: 1024px) {
+  .animatedtext {
+    top: 30%;
+    left: 15%;
+  }
+  .animatedtext > p {
+    font-size: 4.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .animatedtext {
+    top: 20%;
+    left: 12%;
+  }
+  .animatedtext > p {
+    font-size: 3.6rem;
+  }
+  .footer-zaiskri {
+    width: 768px;
+    height: 20rem;
+    padding: 1rem;
+  }
+  .footer-zaiskri > h2 {
+    padding: 1rem;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .animatedtext {
+    top: 18%;
+    left: 12%;
+  }
+  .animatedtext > p {
+    font-size: 2.6rem;
+  }
+  .footer-zaiskri > h2 {
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+  .footer-zaiskri {
+    height: 18rem;
+    width: 600px;
+  }
+}
+@media (max-width: 425px) {
+  .animatedtext {
+    top: 10%;
+    left: 9%;
+  }
+  .animatedtext > p {
+    font-size: 1.6rem;
+    border-right: 2px solid white;
+  }
+  .footer-zaiskri {
+    height: 16rem;
+    width: 425px;
+  }
+}
