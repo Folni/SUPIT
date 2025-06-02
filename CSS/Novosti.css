@@ -19,7 +19,7 @@
   transition: all 1s ease;
 }
 
-.novost {
+.link-novost {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -45,14 +45,14 @@
   background-image: url("/Materials/img/novost3.jpg");
 }
 
-.novost > * {
+.link-novost > * {
   color: rgb(255, 252, 45);
   font-family: "Roboto Condensed", serif;
   font-size: 2.2rem;
   text-align: center;
 }
 
-.novost > p {
+.link-novost > p {
   font-size: 2.1rem;
   color: white;
   font-weight: 500;
@@ -173,7 +173,7 @@
   .section-1 {
     width: 80%;
   }
-  .novost {
+  .link-novost {
     height: 30rem;
     width: 30rem;
     background-size: 90rem;
@@ -197,17 +197,17 @@
   .space {
     height: 5.4rem;
   }
-  .novost {
+  .link-novost {
     height: 25rem;
     width: 25rem;
     background-size: 75rem;
     margin-bottom: 2rem;
     border-width: 1rem;
   }
-  .novost > p {
+  .link-novost > p {
     font-size: 1.5rem;
   }
-  .novost > h3 {
+  .link-novost > h3 {
     font-size: 2rem;
   }
   .novosti {
@@ -260,17 +260,17 @@
     width: 95%;
     height: auto;
   }
-  .novost {
+  .link-novost {
     height: 20rem;
     width: 20rem;
     background-size: 60rem;
     margin-bottom: 2rem;
   }
-  .novost > p {
+  .link-novost > p {
     font-size: 1.3rem;
     line-height: 1.7rem;
   }
-  .novost > h3 {
+  .link-novost > h3 {
     font-size: 1.7rem;
   }
 }

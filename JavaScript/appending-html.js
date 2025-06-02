@@ -74,7 +74,7 @@ $(document).ready(function () {
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="o-nama.html">
+              <a class="nav-link" href="O-Nama.html">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ $(document).ready(function () {
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="Novosti.html">
+              <a class="nav-link" href="Novosti0.html">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -111,7 +111,7 @@ $(document).ready(function () {
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="nastavniplan.html" id="nastavniplan">
+              <a class="nav-link" href="Nastavni-plan.html" id="nastavniplan">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
