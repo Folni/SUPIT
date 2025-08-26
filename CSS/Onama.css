@@ -1,0 +1,399 @@
+.backgroundMap{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+}
+
+
+.onama-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
+} 
+  
+.onama-text-header{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.line{
+    display: block;
+    height: 1px;
+    width: 50%;
+    border: 0;
+    border-top: 5px solid goldenrod;
+    margin: 3rem 0;
+    margin-bottom: 5rem;
+    padding: 0;
+}
+
+.text_red{
+    color: darkred;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: white;
+}
+
+.text-alone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    gap: 1rem;
+}
+
+.onama_text{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: rgb(241, 241, 241);
+    padding: 4rem;
+}
+
+.fancy_text{
+    width: 50%;
+    margin: 0 auto;
+   font-size: 2rem;
+   letter-spacing: 2px;
+   line-height: 2rem;
+   font-style: italic;
+   color: gray;
+   font-family: "Rouge Script", cursive;
+   font-weight: 400;
+   font-style: normal;
+ 
+}
+
+#cards-container1,
+#cards-container2{
+    background-color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 4rem 25rem; 
+    
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-line {
+    height: 2px;
+    background-color: #e6e6e6;
+    margin: 10px 0;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+
+
+#icon-cards-container{
+    background-color: white !important;
+}
+
+.Iconcards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem;
+    padding: 5rem 25rem;
+
+}
+
+  .icon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.icon-card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.icon-card-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ebebeb;
+    margin: 1rem auto ;
+}
+
+.icon-card-image {
+    max-width: 300px;
+    height: 100px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.icon-card-image:hover {
+    transform: scale(1.05);
+}
+
+
+
+.kakoDoNas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.kakoDoNas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Space between the two cards */
+}
+
+.kakoDoNas-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.kakoDoNas-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kakoDoNas-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-left: 12rem;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 2300px) {
+    .Iconcards{
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  
+  @media (max-width: 1950px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .icon-card-image{
+      max-width: 200px;
+      height: 75px;
+    }
+
+    .kakoDoNas-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+
+  @media (max-width: 1600px) {
+
+
+    .Iconcards{
+        padding: 15rem;
+    }
+
+    .cards{
+        padding: 3rem 15rem;
+    }
+
+    .card-title{
+        font-size: 1.1rem;
+    }
+
+    .card-text{
+        font-size: 0.9rem;
+    }
+
+    .fancy_text{
+        font-size: 1.5rem;
+    }
+
+
+  }
+
+  @media (max-width: 1200px) {
+ .onama-text-header{
+    font-size: 2.5rem;
+ }
+
+ .icon-card-text{
+    font-size: 1rem;
+ }
+
+    .Iconcards{
+        padding: 5rem;
+    }
+
+    .cards{
+        padding: 2.5rem 10rem;
+    }
+
+    .fancy_text{
+        width: 100%;
+    }
+
+  
+
+
+}
+
+@media (max-width: 1050px) {
+    .onama-text-header{
+       font-size: 2.5rem;
+    }
+   
+    .icon-card-text{
+       font-size: 1rem;
+
+    }
+   
+       .Iconcards{
+           padding: 9rem;
+           grid-template-columns: repeat(2,1fr);
+
+       }
+   
+       .cards{
+        grid-template-columns: repeat(1,1fr);
+
+           padding: 2.5rem 5rem;
+       }
+
+       .kakoDoNas-container{
+        margin: 2rem auto;
+        width: 80%;
+       }
+   
+     
+   
+   
+}
+
+@media (max-width: 900px) {
+    .onama-text-header{
+       font-size: 2rem;
+    }
+   
+    .icon-card-text{
+       font-size: 0.8rem;
+
+    }
+   
+       .Iconcards{
+           padding: 10rem;
+           grid-template-columns: repeat(1,1fr);
+
+       }
+   
+       .cards{
+        grid-template-columns: repeat(1,1fr);
+
+           padding: 2.5rem 5rem;
+       }
+
+       .kakoDoNas-container{
+        margin: 2rem auto;
+        width: 80%;
+       }
+   
+       .text_red{
+        font-size: 1.7rem;
+       }
+     
+   
+   
+}
+
+@media (max-width: 600px) {
+    .onama-text-header{
+       font-size: 2rem;
+    }
+   
+    .icon-card-text{
+       font-size: 0.8rem;
+
+    }
+   
+       .Iconcards{
+           padding: 1rem;
+           grid-template-columns: repeat(1,1fr);
+
+       }
+   
+       .cards{
+
+           padding: 2rem 0.2rem;
+       }
+
+       .kakoDoNas-text{
+        margin-left: 2rem;
+        font-size: 14px;
+       }
+   
+.onama_text{
+    padding: 1.7rem;
+}
+
+       .fancy_text{
+        font-size: 1rem;
+    line-height: 1rem; 
+    }
+
+    .text_red{
+        padding-bottom: 1rem;
+       }
+     
+   
+   .map-container{
+    height: 200px;
+   }
+}

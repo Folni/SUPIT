@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUPIT</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="./JavaScript/links.js"></script>
+  </head>
+  <body>
+    <div class="contentNastavniPlan" style="padding-bottom: 10rem">
+      <div class="ui-widget">
+        <label for="autocomplete">Naziv kolegija: </label>
+        <input id="autocomplete" />
+      </div>
+
+      <div class="container mt-4 curriculum-table">
+        <h2>Curriculum List</h2>
+        <table class="table table-striped" id="curriculum-table">
+          <thead>
+            <tr>
+              <th>Kolegij</th>
+              <th>ECTS</th>
+              <th>Sati</th>
+              <th>Predavanja</th>
+              <th>Vježbe</th>
+              <th>Tip</th>
+            </tr>
+          </thead>
+          <tbody id="curriculum-list"></tbody>
+          <tfoot>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td id="total-ects">0</td>
+              <td id="total-sati">0</td>
+              <td id="total-predavanja">0</td>
+              <td id="total-vjezbe">0</td>
+              <td id="total-tip">-</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

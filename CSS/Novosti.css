@@ -1,276 +1,129 @@
-.title {
-  margin: 0 auto;
-  margin-top: 6rem;
-  padding: 1rem;
-  width: 100%;
-  transition: margin-top 1s ease;
-}
-
-.novosti {
-  background-color: #f7f7f7;
-  margin: 0 auto;
-  margin-top: 10rem;
-  height: 55rem;
-  width: 100%;
+.the-3-novosti {
   display: flex;
-  padding: 1px;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 1s ease;
-}
-
-.link-novost {
-  align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100rem;
-  border: solid #e7e7e7;
-  border-radius: 25rem;
-  border-width: 2rem;
-  box-shadow: 0px 0px 20px 0px #000000bf;
-  display: flex;
-  flex-direction: column;
-  height: 35rem;
-  justify-content: center;
-  padding: 1rem;
-  width: 35rem;
-}
-.novost-1 {
-  background-image: url("/Materials/img/novost1.jpg");
-}
-.novost-2 {
-  background-image: url("/Materials/img/novost2.jpg");
-}
-.novost-3 {
-  background-image: url("/Materials/img/novost3.jpg");
-}
-
-.link-novost > * {
-  color: rgb(255, 252, 45);
-  font-family: "Roboto Condensed", serif;
-  font-size: 2.2rem;
-  text-align: center;
-}
-
-.link-novost > p {
-  font-size: 2.1rem;
-  color: white;
-  font-weight: 500;
-  text-shadow: 1px 1px black;
-}
-.link-novost {
-  text-decoration: none;
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------- */
-.section-1 {
-  margin: 0 auto;
-  margin-top: 5rem;
-  width: 60%;
-}
-
-.video1 {
-  width: auto;
-  height: 400px;
-}
-
-.section-1 > p {
-  margin-top: 6rem;
-  font-weight: 400;
-  line-height: 3rem;
+  justify-content: space-around;
   margin-bottom: 5rem;
-  font-size: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
-.section-2 {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 72rem;
-  margin-bottom: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-.picture {
-  padding: 1rem;
-  height: 33rem;
-  width: 100%;
-  animation: Slide 0.8s ease forwards;
-}
-.picture > p {
-  color: white;
-  font-size: 4rem;
-  padding: 7rem;
-  width: 70%;
-  margin: 0 auto;
-  line-height: 6rem;
-  font-weight: 500;
+.child-novost {
+  border-radius: 100rem;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-.picture-novosti-1 {
-  background-image: url("/Materials/img/novost1.jpg");
-  background-position: center;
-}
-
-.picture-novosti-2 {
-  background-image: url("/Materials/img/novost2.jpg");
-  background-position: center;
-}
-.picture-novosti-3 {
-  background-image: url("/Materials/img/novost3.jpg");
-  background-position: center;
-}
-
-@keyframes Slide {
-  from {
-    background-position-y: center;
-  }
-  to {
-    background-position-y: top;
-  }
-}
-.space {
-  padding: 1rem;
-  height: 5.7rem;
-  width: 100%;
-}
-
-.mbc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-item img {
-  z-index: 100;
-  max-width: 100%;
-  max-height: 80vh;
-  margin: auto;
-  display: block;
-}
-
-.mhc {
+.child-novost-text {
   position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  z-index: 5;
 }
 
-.btn-close {
-  font-size: 2rem;
-  cursor: pointer;
+.child-novost-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  object-fit: cover;
+  border-radius: 100rem;
 }
 
-@media (max-width: 1024px) {
-  .picture > p {
-    line-height: 5rem;
-    width: 80%;
+.novosti-text {
+  font-size: 1.4rem;
+  max-width: 50%;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1920px) {
+  .the-3-novosti {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
-  .title > h1 {
-    margin-bottom: 2rem;
+}
+
+@media (max-width: 1580px) {
+  .the-3-novosti {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
-  .section-1 {
-    width: 80%;
+
+  .child-novost {
+    width: 300px;
+    height: 300px;
   }
-  .link-novost {
-    height: 30rem;
-    width: 30rem;
-    background-size: 90rem;
+
+  .child-novost-text {
+    font-size: smaller;
   }
-  .novost > p {
-    font-size: 1.5rem;
+
+  .novost1Content {
+    width: 60% !important;
   }
-  .novosti {
+}
+
+@media (max-width: 1100px) {
+  .the-3-novosti {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .child-novost {
+    width: 250px;
+    height: 250px;
+  }
+
+  .child-novost-text {
+    font-size: smaller;
+  }
+
+  .novosti-text {
+    max-width: 80%;
+  }
+
+  .header-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .the-3-novosti {
+    max-width: max-content;
+    flex-direction: column;
     margin: 0 auto;
+    gap: 1rem;
   }
 }
 
-@media (max-width: 768px) {
-  .picture {
-    background-size: 150rem;
-  }
-  .picture > p {
-    font-size: 3.5rem;
-    width: 90%;
-  }
-  .space {
-    height: 5.4rem;
-  }
-  .link-novost {
-    height: 25rem;
-    width: 25rem;
-    background-size: 75rem;
-    margin-bottom: 2rem;
-    border-width: 1rem;
-  }
-  .link-novost > p {
-    font-size: 1.5rem;
-  }
-  .link-novost > h3 {
+@media (max-width: 500px) {
+  .line-text-header {
     font-size: 2rem;
   }
-  .novosti {
-    flex-direction: column;
-    height: fit-content;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 600px) {
-  .section-1 > p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .section-2 {
-    width: 58rem;
-  }
-  .picture > p {
-    padding: 1rem;
-    padding-top: 4rem;
-    font-size: 3rem;
-    width: 90%;
-  }
-  article > h3 {
-    font-size: 2.5rem;
-  }
-  .video1 {
-    width: 90%;
-    height: auto;
-  }
-}
 
-@media (max-width: 425px) {
-  .picture {
-    background-size: 120rem;
+  .line {
+    margin-bottom: 1rem;
   }
-  .carousel > .container > .row > div {
-    margin-bottom: 2rem;
+
+  .novosti-text {
+    font-size: 1rem;
   }
-  .section-2 {
-    width: 40rem;
+
+  .header-text {
+    font-size: 1.5rem !important;
   }
-  .picture > p {
-    font-size: 2.5rem;
-    width: 100%;
-  }
-  article > h3 {
-    font-size: 2.5rem;
-  }
-  .video1 {
-    width: 95%;
-    height: auto;
-  }
-  .link-novost {
-    height: 20rem;
-    width: 20rem;
-    background-size: 60rem;
-    margin-bottom: 2rem;
-  }
-  .link-novost > p {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-  .link-novost > h3 {
-    font-size: 1.7rem;
+
+  .novost1Content {
+    width: 90% !important;
   }
 }

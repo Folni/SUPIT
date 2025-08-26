@@ -11,13 +11,12 @@ $("#registerform").on("submit", function (e) {
     success: function (response) {
       if (response.statusCode === 200) {
         window.location.href = "prijava.html";
-        console.log("Uspjesna registracija preusmjeravanje");
       } else {
-        $("#errorMsg").text(`${response.errorMessages[0]}`);
-        $("#errorMsg").fadeIn();
+        $("#failure-message").text(`${response.errorMessages[0]}`);
+        $("#failure-message").fadeIn();
         setTimeout(function () {
-          $("#errorMsg").fadeOut();
-          $("#errorMsg").text("");
+          $("#failure-message").fadeOut();
+          $("#failure-message").text("");
         }, 5000);
       }
       if (response.statusCode === 401) {
@@ -25,11 +24,11 @@ $("#registerform").on("submit", function (e) {
       }
     },
     error: function (res) {
-      $("#errorMsg").text(`${response.errorMessages[0]}`);
-      $("#errorMsg").fadeIn();
+      $("#failure-message").text(`${response.errorMessages[0]}`);
+      $("#failure-message").fadeIn();
       setTimeout(function () {
-        $("#errorMsg").fadeOut();
-        $("#errorMsg").text("");
+        $("#failure-message").fadeOut();
+        $("#failure-message").text("");
       }, 5000);
       if (response.statusCode === 401) {
         localStorage.clear();

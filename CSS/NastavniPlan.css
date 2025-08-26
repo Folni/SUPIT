@@ -1,0 +1,71 @@
+
+
+.contentNastavniPlan{
+display: flex;
+gap: 4rem;
+align-items: center;
+justify-content: center;
+padding: 10rem 10rem 25rem 10rem;
+max-width: 1500px;
+margin: 0 auto;
+
+}
+    .search-dropdown-container {
+        position: relative;
+    }
+
+    #search-bar {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .dropdown {
+        position: absolute;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: white;
+        z-index: 1000;
+        display: none; /* Initially hidden */
+    }
+
+    .dropdown ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+    }
+
+    @media (max-width: 1400px) {
+      .contentNastavniPlan{
+        flex-direction: column-reverse;
+      }
+       }
+
+       @media (max-width: 800px) {
+        .contentNastavniPlan{
+          padding: 0rem;
+          padding-top: 5rem;
+        }
+
+        .curriculum-table{
+          margin: 0;
+          padding: 0   ;
+        }
+         }

@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $("#odjava").hide();
+  $("#logout-link").hide();
   $("#errorMsg").hide();
   $("#successMsg").hide();
 
-  $("#loginForm").on("submit", function (e) {
+  $("#login-form").on("submit", function (e) {
     e.preventDefault();
     const username = $("#username").val();
     const password = $("#password").val();
@@ -21,29 +21,29 @@ $(document).ready(function () {
           localStorage.setItem("username", username);
           localStorage.setItem("Loggedin", true);
 
-          $("#errorMsg").hide();
+          $("#failure-message").hide();
           $("#successMsg").fadeIn();
 
           setTimeout(() => {
-            $("#nastavniplan").show();
+            $("#Nastavniplan").show();
             window.location.href = "index.html";
           }, 2000);
         } else {
-          $("#errorMsg").text(`${response.errorMessages[0]}`);
-          $("#errorMsg").fadeIn();
+          $("#failure-message").text(`${response.errorMessages[0]}`);
+          $("#failure-message").fadeIn();
           setTimeout(function () {
-            $("#errorMsg").fadeOut();
-            $("#errorMsg").text("");
-          }, 5000);
+            $("#failure-message").fadeOut();
+            $("#failure-message").text("");
+          }, 2000);
         }
       },
       error: function (res) {
-        $("#errorMsg").text(`${response.errorMessages[0]}`);
-        $("#errorMsg").fadeIn();
+        $("#failure-message").text(`Error communicating with api`);
+        $("#failure-message").fadeIn();
         setTimeout(function () {
-          $("#errorMsg").fadeOut();
-          $("#errorMsg").text("");
-        }, 5000);
+          $("#failure-message").fadeOut();
+          $("#failure-message").text("");
+        }, 2000);
       },
     });
   });
