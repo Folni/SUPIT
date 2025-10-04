@@ -33,8 +33,8 @@ Installation and Running
     Clone the Repository:
     Bash
 
-git clone [repository-url]
-cd [project-directory]
+    git clone [repository-url]
+    cd [project-directory]
 
 Open in VS Code and Run:
 
